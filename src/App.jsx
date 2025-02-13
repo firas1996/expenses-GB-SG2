@@ -1,7 +1,9 @@
+import ExpenseDetails from "./components/ExpenseDetails";
+
 function App() {
   return (
     <div>
-      <h1>dfhgdf </h1>
+      <ExpenseDetails />
     </div>
   );
 }
