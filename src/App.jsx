@@ -27,6 +27,12 @@ function App() {
       price: 800,
       date: new Date("2025-04-13"),
     },
+    {
+      id: 5,
+      title: "Education",
+      price: 800,
+      date: new Date("2027-04-13"),
+    },
   ];
   return (
     <div>
