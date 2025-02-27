@@ -10,7 +10,7 @@ const ExpensesContainer = ({ expensesData }) => {
   console.log(years);
   return (
     <div className="expenses">
-      <ExpensesFilter />
+      <ExpensesFilter years={years} />
       {expensesData.map((expense) => {
         return (
           <ExpenseDetails

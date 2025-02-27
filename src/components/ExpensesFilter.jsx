@@ -1,14 +1,17 @@
 import "./ExpensesFilter.css";
 
-const ExpensesFilter = () => {
+const ExpensesFilter = ({ years }) => {
   return (
     <div className="expenses-filter">
       <label>Filter by year</label>
       <select>
-        <option>All</option>
-        <option>2023</option>
-        <option>2024</option>
-        <option>2025</option>
+        {years.map((el) => {
+          return (
+            <option key={el} value={el}>
+              {el}
+            </option>
+          );
+        })}
       </select>
     </div>
   );
