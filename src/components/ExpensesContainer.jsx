@@ -23,7 +23,7 @@ const ExpensesContainer = ({ expensesData }) => {
         selectedYear={selectedYear}
         setSelectedYear={setSelectedYear}
       />
-      <ExpensesChart />
+      <ExpensesChart expensesData={filtredExpenses} />
       {filtredExpenses.map((expense) => {
         return (
           <ExpenseDetails

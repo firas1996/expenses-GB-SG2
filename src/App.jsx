@@ -13,19 +13,25 @@ function App() {
       id: 2,
       title: "PC",
       price: 700,
-      date: new Date("2024-08-13"),
+      date: new Date("2024-08-30"),
     },
     {
       id: 3,
       title: "Car",
       price: 200,
-      date: new Date("2023-10-13"),
+      date: new Date("2023-10-20"),
     },
     {
       id: 4,
       title: "Education",
       price: 800,
-      date: new Date("2025-04-13"),
+      date: new Date("2025-04-07"),
+    },
+    {
+      id: 5,
+      title: "Voyage",
+      price: 200,
+      date: new Date("2024-02-03"),
     },
   ];
   return (
