@@ -1,5 +1,5 @@
-import ExpenseDetails from "./components/ExpenseDetails";
 import ExpensesContainer from "./components/ExpensesContainer";
+// import Button from "react-bootstrap/Button";
 
 function App() {
   const expensesData = [
@@ -30,6 +30,7 @@ function App() {
   ];
   return (
     <div>
+      {/* <Button variant="outline-primary">Primary</Button> */}
       <ExpensesContainer expensesData={expensesData} />
     </div>
   );
