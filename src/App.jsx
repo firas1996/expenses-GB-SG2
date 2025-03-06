@@ -1,3 +1,4 @@
+import AddExpense from "./components/AddExpense";
 import ExpensesContainer from "./components/ExpensesContainer";
 // import Button from "react-bootstrap/Button";
 
@@ -37,6 +38,7 @@ function App() {
   return (
     <div>
       {/* <Button variant="outline-primary">Primary</Button> */}
+      <AddExpense />
       <ExpensesContainer expensesData={expensesData} />
     </div>
   );
