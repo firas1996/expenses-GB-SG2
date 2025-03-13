@@ -29,7 +29,6 @@ const ExpensesChart = ({ expensesData }) => {
   const values = chartData.map((el) => el.value);
   const max = Math.max(...values);
   const total = values.reduce((sum, nbr) => sum + nbr);
-  console.log(total);
 
   return (
     <div className="chart">

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import AddExpense from "./components/AddExpense";
 import ExpensesContainer from "./components/ExpensesContainer";
 // import Button from "react-bootstrap/Button";
@@ -35,14 +36,17 @@ function App() {
       date: new Date("2024-02-03"),
     },
   ];
+  const [newExpensesData, setNewExpensesData] = useState(expensesData);
   const getData = (data) => {
-    console.log(data);
+    setNewExpensesData([data, ...newExpensesData]);
+    // localStorage.setItem("test", "ok");
+    // console.log(localStorage.getItem("test"));
   };
   return (
     <div>
       {/* <Button variant="outline-primary">Primary</Button> */}
       <AddExpense getData={getData} />
-      <ExpensesContainer expensesData={expensesData} />
+      <ExpensesContainer expensesData={newExpensesData} />
     </div>
   );
 }

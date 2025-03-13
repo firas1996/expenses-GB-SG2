@@ -15,7 +15,12 @@ const AddExpense = ({ getData }) => {
   };
   const submitHandler = (event) => {
     event.preventDefault();
-    getData(data);
+    getData({
+      id: Math.random(),
+      title: data.title,
+      price: +data.price,
+      date: new Date(data.date),
+    });
     setData({
       title: "",
       price: "",
