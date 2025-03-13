@@ -35,10 +35,13 @@ function App() {
       date: new Date("2024-02-03"),
     },
   ];
+  const getData = (data) => {
+    console.log(data);
+  };
   return (
     <div>
       {/* <Button variant="outline-primary">Primary</Button> */}
-      <AddExpense />
+      <AddExpense getData={getData} />
       <ExpensesContainer expensesData={expensesData} />
     </div>
   );
